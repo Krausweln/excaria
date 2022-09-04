@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect, useMemo } from "react";
+import { Routes, Route } from "react-router-dom";
+
+// home components
+import Index from "./components/0-5th/Index";
+import Index1 from "./components/5-9th/Index1";
+
+// components
+import BagianTubuh from "./components/0-5th/BagianTubuh";
+import BagaimanaKamuLahir from "./components/0-5th/BagaimanaKamuLahir";
+import Login from "./components/Login/Login";
+import LakiPerempuan from "./components/0-5th/LakiPerempuan";
+import Perilaku from "./components/0-5th/Perilaku";
+import DoPerilaku from "./components/0-5th/DoPerilaku";
+import DontPerilaku from "./components/0-5th/DontPerilaku";
+import FungsiReproduksi from "./components/5-9th/FungsiReproduksi";
+import PersiapanPubertas from "./components/5-9th/PersiapanPubertas";
+import MateriPersiapanPubertas from "./components/5-9th/MateriPersiapanPubertas";
+import CaraMenjagaDiri from "./components/5-9th/CaraMenjagaDiri";
 
 function App() {
+  const [input, setInput] = useState("");
+  const inputMemo = useMemo(() => {
+    return input;
+  });
+  const [age, setAge] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Login input={input} setInput={setInput} age={age} setAge={setAge} />
+        }
+      />
+      <Route path="/0-5th" element={<Index name={inputMemo} />} />
+      <Route path="/0-5th/bagian-tubuh" element={<BagianTubuh />} />
+      <Route
+        path="/0-5th/bagaimana-kamu-bisa-lahir"
+        element={<BagaimanaKamuLahir />}
+      />
+      <Route path="/0-5th/laki-perempuan" element={<LakiPerempuan />} />
+      <Route path="/0-5th/perilaku" element={<Perilaku />} />
+      <Route path="/0-5th/perilaku/do" element={<DoPerilaku />} />
+      <Route path="/0-5th/perilaku/dont" element={<DontPerilaku />} />
+      <Route path="/5-9th" element={<Index1 name={inputMemo} />} />
+      <Route path="/5-9th/fungsi-reproduksi" element={<FungsiReproduksi />} />
+      <Route path="/5-9th/persiapan-pubertas" element={<PersiapanPubertas />} />
+      <Route
+        path="/5-9th/persiapan-pubertas/materi"
+        element={<MateriPersiapanPubertas />}
+      />
+      <Route path="/5-9th/cara-menjaga-diri" element={<CaraMenjagaDiri />} />
+    </Routes>
   );
 }
 
