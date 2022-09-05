@@ -1,6 +1,9 @@
 import React from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Audio } from "react-loader-spinner";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 import rambut from "../img/12_20220628_191013_0000.png";
 import mata from "../img/13_20220628_191013_0001.png";
@@ -23,12 +26,6 @@ import "swiper/css/pagination";
 const BagianTubuh = () => {
   return (
     <>
-      <a
-        href="index.html"
-        className="fixed top-5 left-5 z-10 p-3 rounded-lg bg-[#4F1F15] text-white"
-      >
-        Home
-      </a>
       <div className="w-full h-screen bg-[#FFC6CC]">
         <Swiper
           modules={[Pagination, Navigation]}
@@ -36,7 +33,13 @@ const BagianTubuh = () => {
         >
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={rambut} alt="rambut" className="w-2/5" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={rambut}
+                alt="rambut"
+                className="w-2/5 mx-auto self-center justify-self-center"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Rambut
               </h1>
@@ -49,7 +52,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={mata} alt="mata" className="w-2/5" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={mata}
+                alt="mata"
+                className="w-2/5 mx-auto self-center justify-self-center"
+              />
               <h1 className="font-bold font-sansita text-4xl mt-10 text-center tracking-wider text-[#4F1F15]">
                 Mata
               </h1>
@@ -61,7 +70,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={telinga} alt="rambut" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={telinga}
+                alt="rambut"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15] mt-5">
                 Telinga
               </h1>
@@ -73,7 +88,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={hidung} alt="hidung" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={hidung}
+                alt="hidung"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Hidung
               </h1>
@@ -85,7 +106,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={mulut} alt="mulut" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={mulut}
+                alt="mulut"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Mulut
               </h1>
@@ -97,7 +124,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={bahu} alt="bahu" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={bahu}
+                alt="bahu"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Bahu
               </h1>
@@ -110,7 +143,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={payudara} alt="payudara" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={payudara}
+                alt="payudara"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Payudara
               </h1>
@@ -122,7 +161,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={dada} alt="dada" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={dada}
+                alt="dada"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Dada
               </h1>
@@ -134,7 +179,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={tangan} alt="tangan" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={tangan}
+                alt="tangan"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Tangan
               </h1>
@@ -147,7 +198,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={jari} alt="jari" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={jari}
+                alt="jari"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15] mt-7">
                 Jari
               </h1>
@@ -159,7 +216,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={perut} alt="perut" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={perut}
+                alt="perut"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Perut
               </h1>
@@ -172,7 +235,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={kemaluan} alt="alat kemaluan" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={kemaluan}
+                alt="alat kemaluan"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15]">
                 Alat Kemaluan
               </h1>
@@ -184,7 +253,13 @@ const BagianTubuh = () => {
 
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
-              <img src={kaki} alt="kaki" className="w-[40%]" />
+              <LazyLoadImage
+                effect="opacity"
+                wrapperClassName="w-full flex justify-center items-center"
+                src={kaki}
+                alt="kaki"
+                className="w-[40%] mx-auto"
+              />
               <h1 className="font-bold font-sansita text-4xl text-center tracking-wider text-[#4F1F15] mt-5">
                 Kaki
               </h1>

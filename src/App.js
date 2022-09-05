@@ -62,7 +62,7 @@ function App() {
         element={<MateriPersiapanPubertas />}
       />
       <Route path="/5-9th/cara-menjaga-diri" element={<CaraMenjagaDiri />} />
-      <Route path="/10-12th" element={<Index2 />} />
+      <Route path="/10-12th" element={<Index2 name={inputMemo} />} />
     </Routes>
   );
 }
