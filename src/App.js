@@ -19,6 +19,7 @@ import MateriPersiapanPubertas from "./components/5-9th/MateriPersiapanPubertas"
 import CaraMenjagaDiri from "./components/5-9th/CaraMenjagaDiri";
 import Salah from "./components/5-9th/Salah";
 import Benar from "./components/5-9th/Benar";
+import Index2 from "./components/10-12th/Index2";
 
 function App() {
   const [input, setInput] = useState("");
@@ -61,6 +62,7 @@ function App() {
         element={<MateriPersiapanPubertas />}
       />
       <Route path="/5-9th/cara-menjaga-diri" element={<CaraMenjagaDiri />} />
+      <Route path="/10-12th" element={<Index2 />} />
     </Routes>
   );
 }

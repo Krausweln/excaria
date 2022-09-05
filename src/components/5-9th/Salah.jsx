@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import salah from "../img/assets/salah.png";
 
@@ -15,7 +16,7 @@ const Salah = () => {
               </p>
             </div>
             <div className="w-full flex flex-col items-center bg-[#FF9E9E] py-6 rounded-xl">
-              <img src={salah} alt="" className="w-4/12" />
+              <LazyLoadImage src={salah} alt="" className="w-4/12" />
               <p className="font-sansita font-bold text-3xl">
                 Duh, Coba lagi yuk!
               </p>

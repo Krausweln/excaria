@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import benar from "../img/assets/benar.png";
 
@@ -15,7 +16,7 @@ const Benar = () => {
               </p>
             </div>
             <div className="w-full flex flex-col items-center bg-[#CAE4DF] py-6 rounded-xl">
-              <img src={benar} alt="" className="w-4/12" />
+              <LazyLoadImage src={benar} alt="" className="w-4/12" />
               <p className="font-sansita font-bold text-3xl">
                 Tepat, kamu hebat!
               </p>

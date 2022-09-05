@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Pagination, slideShadows } from "swiper";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "swiper/css/effect-cards";
 
@@ -34,7 +35,7 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <img src={do1} alt="" className="w-5/12" />
+                  <LazyLoadImage src={do1} alt="" className="w-5/12" />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Tidak mudah percaya pada orang lain
@@ -47,7 +48,7 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <img src={do2} alt="" className="w-7/12" />
+                  <LazyLoadImage src={do2} alt="" className="w-7/12" />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Tidak membiarkan tubuh disentuh sembarangan oleh orang
@@ -61,7 +62,7 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-3 rounded-lg bg-caramenjagado">
-                  <img src={do3} alt="" className="w-7/12" />
+                  <LazyLoadImage src={do3} alt="" className="w-7/12" />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Tidak mudah menerima makanan dari orang lain
@@ -74,7 +75,11 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <img src={do4} alt="" className="w-7/12 md:w-4/12" />
+                  <LazyLoadImage
+                    src={do4}
+                    alt=""
+                    className="w-7/12 md:w-4/12"
+                  />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Berhati-hati terhadap orang lain
@@ -105,7 +110,7 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <img src={dont1} alt="" className="w-5/12" />
+                  <LazyLoadImage src={dont1} alt="" className="w-5/12" />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Mudah percaya pada orang lain
@@ -118,7 +123,7 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <img src={dont2} alt="" className="w-5/12" />
+                  <LazyLoadImage src={dont2} alt="" className="w-5/12" />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Membiarkan tubuh disentuh orang lain secara sembarangan
@@ -132,7 +137,7 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-3 rounded-lg bg-caramenjagado">
-                  <img src={dont3} alt="" className="w-8/12" />
+                  <LazyLoadImage src={dont3} alt="" className="w-8/12" />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Mudah menerima makanan dari orang lain
@@ -143,60 +148,6 @@ const CaraMenjagaDiri = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        {/* <div className="swiper mySwiper min-h-[50vh] lg:h-screen w-full flex flex-col justify-evenly bg-excariaBg">
-          <div className="w-full text-center mt-4">
-            <p className="font-sansita text-2xl font-bold">
-              Yang tidak boleh dilakukan
-            </p>
-          </div>
-          <div className="swiper-wrapper">
-            <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
-              <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                <img
-                  src={dont1}
-                  alt=""
-                  className="w-5/12"
-                />
-                <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
-                  <p className="text-lg font-sansita">
-                    Mudah percaya pada orang lain
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
-              <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                <img
-                  src={dont2}
-                  alt=""
-                  className="w-5/12"
-                />
-                <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
-                  <p className="text-lg font-sansita">
-                    Membiarkan tubuh disentur orang lain secara sembarangan
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
-              <div className="w-7/12 h-11/12 flex flex-col items-center py-3 rounded-lg bg-caramenjagado">
-                <img
-                  src={dont3}
-                  alt=""
-                  className="w-8/12 relative top-4 z-10"
-                />
-                <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center z-20">
-                  <p className="text-lg font-sansita">
-                    Tidak mudah percaya pada orang lain
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="swiper-pagination"></div>
-        </div> */}
       </section>
     </div>
   );
