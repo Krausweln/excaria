@@ -15,11 +15,11 @@ const Index = ({ name }) => {
     <section className="bg-[#FDF4F5] h-[120vh]">
       <div className="w-full h-[25vh] bg-[#FDBBBF] flex items-center px-3 rounded-bl-[70px]">
         <div className="flex justify-center gap-8 items-center">
-          <LazyLoadImage
+          <img
             effect="opacity"
             src={bayi}
             alt="Foto Bayi"
-            className="w-[30%] border p-1 bg-white rounded-full mx-auto"
+            className="w-[30%] border p-1 bg-white rounded-full"
           />
           <h1 className="font-sansita font-extrabold text-4xl">Hi, {name}</h1>
         </div>
