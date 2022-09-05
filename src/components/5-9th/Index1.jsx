@@ -18,38 +18,31 @@ const Index1 = ({ name }) => {
               Halo {name}
             </p>
           </div>
-          <div className="w-full px-6 py-4 bg-[#E29589] rounded-[5rem] text-center">
-            <Link
-              to="/5-9th/fungsi-reproduksi"
-              className="font-sansita text-2xl font-bold"
-            >
+          <Link
+            to="/5-9th/fungsi-reproduksi"
+            className="font-sansita text-2xl font-bold"
+          >
+            <div className="w-full px-6 py-4 bg-[#E29589] rounded-[5rem] text-center">
               Fungsi Reproduksi
-            </Link>
-          </div>
-          <div className="w-full px-6 py-4 bg-[#E29589] rounded-[5rem] text-center">
-            <Link
-              to="/5-9th/persiapan-pubertas"
-              className="font-sansita text-2xl font-bold"
-            >
+            </div>
+          </Link>
+          <Link
+            to="/5-9th/persiapan-pubertas"
+            className="font-sansita text-2xl font-bold"
+          >
+            <div className="w-full px-6 py-4 bg-[#E29589] rounded-[5rem] text-center">
               Persiapan Pubertas
-            </Link>
-          </div>
-          {/* <div className="w-full px-6 py-4 bg-[#E5B4B3] rounded-[5rem] text-center">
-            <a
-              href="persiapan-pubertas.html"
-              className="font-sansita text-2xl font-bold"
-            >
-              Persiapan Pubertas
-            </a>
-          </div> */}
-          <div className="w-full px-6 py-4 bg-[#F0ADB4] rounded-[5rem] text-center">
-            <Link
-              to="/5-9th/cara-menjaga-diri"
-              className="font-sansita text-2xl font-bold"
-            >
+            </div>
+          </Link>
+
+          <Link
+            to="/5-9th/cara-menjaga-diri"
+            className="font-sansita text-2xl font-bold"
+          >
+            <div className="w-full px-6 py-4 bg-[#F0ADB4] rounded-[5rem] text-center">
               Cara Menjaga Diri
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

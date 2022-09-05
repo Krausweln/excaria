@@ -17,13 +17,18 @@ import FungsiReproduksi from "./components/5-9th/FungsiReproduksi";
 import PersiapanPubertas from "./components/5-9th/PersiapanPubertas";
 import MateriPersiapanPubertas from "./components/5-9th/MateriPersiapanPubertas";
 import CaraMenjagaDiri from "./components/5-9th/CaraMenjagaDiri";
+import Salah from "./components/5-9th/Salah";
+import Benar from "./components/5-9th/Benar";
 
 function App() {
   const [input, setInput] = useState("");
+  const [age, setAge] = useState("");
+
+  const [jawab, setJawab] = useState([false, false, false, false]);
+
   const inputMemo = useMemo(() => {
     return input;
   });
-  const [age, setAge] = useState("");
 
   return (
     <Routes>
@@ -44,7 +49,12 @@ function App() {
       <Route path="/0-5th/perilaku/do" element={<DoPerilaku />} />
       <Route path="/0-5th/perilaku/dont" element={<DontPerilaku />} />
       <Route path="/5-9th" element={<Index1 name={inputMemo} />} />
-      <Route path="/5-9th/fungsi-reproduksi" element={<FungsiReproduksi />} />
+      <Route
+        path="/5-9th/fungsi-reproduksi"
+        element={<FungsiReproduksi jawab={jawab} setJawab={setJawab} />}
+      />
+      <Route path="/5-9th/fungsi-reproduksi/salah" element={<Salah />} />
+      <Route path="/5-9th/fungsi-reproduksi/benar" element={<Benar />} />
       <Route path="/5-9th/persiapan-pubertas" element={<PersiapanPubertas />} />
       <Route
         path="/5-9th/persiapan-pubertas/materi"

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Salah from "./Salah";
 
-const FungsiReproduksi = () => {
+const FungsiReproduksi = ({ jawab, setJawab }) => {
   return (
     <section>
       <div className="min-h-screen w-full flex flex-col justify-evenly items-center bg-excariaBg">
@@ -10,24 +12,36 @@ const FungsiReproduksi = () => {
               Menurut kamu, apa sih fungsi reproduksi itu?
             </p>
           </div>
-          <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
-            <p className="text-lg font-sansita">
-              Untuk mencegah penurunan tingkat moral.
-            </p>
-          </div>
-          <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
-            <p className="text-lg font-sansita">Untuk menambah penhasilan.</p>
-          </div>
-          <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
-            <p className="text-lg font-sansita">
-              Untuk melestarikan keturunan agar tidak punah.
-            </p>
-          </div>
-          <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
-            <p className="text-lg font-sansita">
-              Untuk memperbaiki kondisi lingkungan.
-            </p>
-          </div>
+
+          <Link to="/5-9th/fungsi-reproduksi/salah">
+            <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
+              <p className="text-lg font-sansita">
+                Untuk mencegah penurunan tingkat moral.
+              </p>
+            </div>
+          </Link>
+
+          <Link to="/5-9th/fungsi-reproduksi/salah">
+            <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
+              <p className="text-lg font-sansita">Untuk menambah penhasilan.</p>
+            </div>
+          </Link>
+
+          <Link to="/5-9th/fungsi-reproduksi/benar">
+            <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
+              <p className="text-lg font-sansita">
+                Untuk melestarikan keturunan agar tidak punah.
+              </p>
+            </div>
+          </Link>
+
+          <Link to="/5-9th/fungsi-reproduksi/salah">
+            <div className="w-full py-4 bg-[#FFE7E3] px-4 rounded-[2rem] text-center">
+              <p className="text-lg font-sansita">
+                Untuk memperbaiki kondisi lingkungan.
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </section>
