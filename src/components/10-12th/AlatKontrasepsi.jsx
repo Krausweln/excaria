@@ -29,13 +29,6 @@ const AlatKontrasepsi = () => {
             return setCount(index.realIndex);
           }}
           pagination={{ clickable: true }}
-          effect="fade"
-          onSlideChange={(e) => {
-            console.log(e);
-          }}
-          onSwiper={(e) => {
-            console.log(e);
-          }}
         >
           <SwiperSlide>
             <div className="h-[55vh] w-full relative flex">

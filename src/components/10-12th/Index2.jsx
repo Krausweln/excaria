@@ -73,21 +73,23 @@ const Index2 = ({ name }) => {
               </div>
             </Link>
 
-            <div className="bg-white rounded-xl flex m-4">
-              <div className="w-1/4 bg-[#92AF98] m-2 p-2 rounded-xl">
-                <LazyLoadImage
-                  effect="opacity"
-                  src={img2}
-                  alt=""
-                  className="w-full mx-auto"
-                />
+            <Link to="/10-12th/alat-kontrasepsi">
+              <div className="bg-white rounded-xl flex m-4">
+                <div className="w-1/4 bg-[#92AF98] m-2 p-2 rounded-xl">
+                  <LazyLoadImage
+                    effect="opacity"
+                    src={img2}
+                    alt=""
+                    className="w-full mx-auto"
+                  />
+                </div>
+                <div className="w-3/4 flex justify-center items-center">
+                  <p className="text-2xl font-sansita font-bold">
+                    Alat Kontrasepsi
+                  </p>
+                </div>
               </div>
-              <div className="w-3/4 flex justify-center items-center">
-                <p className="text-2xl font-sansita font-bold">
-                  Alat Kontrasepsi
-                </p>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
