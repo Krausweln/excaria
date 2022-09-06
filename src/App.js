@@ -20,12 +20,14 @@ import CaraMenjagaDiri from "./components/5-9th/CaraMenjagaDiri";
 import Salah from "./components/5-9th/Salah";
 import Benar from "./components/5-9th/Benar";
 import Index2 from "./components/10-12th/Index2";
+import Pubertas from "./components/10-12th/Pubertas";
+import PerubahanFisik from "./components/10-12th/PerubahanFisik";
+import Indexx from "./components/10-12th/Indexx";
+import AlatKontrasepsi from "./components/10-12th/AlatKontrasepsi";
 
 function App() {
   const [input, setInput] = useState("");
   const [age, setAge] = useState("");
-
-  const [jawab, setJawab] = useState([false, false, false, false]);
 
   const inputMemo = useMemo(() => {
     return input;
@@ -50,10 +52,7 @@ function App() {
       <Route path="/0-5th/perilaku/do" element={<DoPerilaku />} />
       <Route path="/0-5th/perilaku/dont" element={<DontPerilaku />} />
       <Route path="/5-9th" element={<Index1 name={inputMemo} />} />
-      <Route
-        path="/5-9th/fungsi-reproduksi"
-        element={<FungsiReproduksi jawab={jawab} setJawab={setJawab} />}
-      />
+      <Route path="/5-9th/fungsi-reproduksi" element={<FungsiReproduksi />} />
       <Route path="/5-9th/fungsi-reproduksi/salah" element={<Salah />} />
       <Route path="/5-9th/fungsi-reproduksi/benar" element={<Benar />} />
       <Route path="/5-9th/persiapan-pubertas" element={<PersiapanPubertas />} />
@@ -63,6 +62,10 @@ function App() {
       />
       <Route path="/5-9th/cara-menjaga-diri" element={<CaraMenjagaDiri />} />
       <Route path="/10-12th" element={<Index2 name={inputMemo} />} />
+      <Route path="/10-12th/start" element={<Indexx name={inputMemo} />} />
+      <Route path="/10-12th/pubertas" element={<Pubertas />} />
+      <Route path="/10-12th/perubahan-fisik" element={<PerubahanFisik />} />
+      <Route path="/10-12th/alat-kontrasepsi" element={<AlatKontrasepsi />} />
     </Routes>
   );
 }

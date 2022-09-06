@@ -6,6 +6,7 @@ import imgtop from "../img/profile10-12th.png";
 import img1 from "../img/girlwtowel.png";
 import img3 from "../img/girl.png";
 import img2 from "../img/assets/contraception.png";
+import { Link } from "react-router-dom";
 
 const Index2 = ({ name }) => {
   return (
@@ -38,35 +39,39 @@ const Index2 = ({ name }) => {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl flex m-4">
-              <div className="w-1/4 bg-[#92AF98] m-2 rounded-xl">
-                <LazyLoadImage
-                  effect="opacity"
-                  src={img1}
-                  alt=""
-                  className="w-full mx-auto"
-                />
+            <Link to="/10-12th/pubertas">
+              <div className="bg-white rounded-xl flex m-4">
+                <div className="w-1/4 bg-[#92AF98] m-2 rounded-xl">
+                  <LazyLoadImage
+                    effect="opacity"
+                    src={img1}
+                    alt=""
+                    className="w-full mx-auto"
+                  />
+                </div>
+                <div className="w-3/4 flex justify-center items-center">
+                  <p className="text-2xl font-sansita font-bold">Pubertas</p>
+                </div>
               </div>
-              <div className="w-3/4 flex justify-center items-center">
-                <p className="text-2xl font-sansita font-bold">Pubertas</p>
-              </div>
-            </div>
+            </Link>
 
-            <div className="bg-white rounded-xl flex m-4">
-              <div className="w-1/4 flex justify-center items-center bg-[#92AF98] m-2 p-1 rounded-xl max-h-[83.52px] overflow-hidden">
-                <LazyLoadImage
-                  effect="opacity"
-                  src={img3}
-                  alt=""
-                  className="w-3/4 mx-auto"
-                />
+            <Link to="/10-12th/perubahan-fisik">
+              <div className="bg-white rounded-xl flex m-4">
+                <div className="w-1/4 flex justify-center items-center bg-[#92AF98] m-2 p-1 rounded-xl max-h-[83.52px] overflow-hidden">
+                  <LazyLoadImage
+                    effect="opacity"
+                    src={img3}
+                    alt=""
+                    className="w-3/4 mx-auto"
+                  />
+                </div>
+                <div className="w-3/4 flex justify-center items-center">
+                  <p className="text-2xl font-sansita font-bold">
+                    Perubahan Fisik
+                  </p>
+                </div>
               </div>
-              <div className="w-3/4 flex justify-center items-center">
-                <p className="text-2xl font-sansita font-bold">
-                  Perubahan Fisik
-                </p>
-              </div>
-            </div>
+            </Link>
 
             <div className="bg-white rounded-xl flex m-4">
               <div className="w-1/4 bg-[#92AF98] m-2 p-2 rounded-xl">

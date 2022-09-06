@@ -21,9 +21,9 @@ const Login = ({ input, setInput, age, setAge }) => {
     if (Age < 5) {
       navigate("/0-5th");
     } else if (Age >= 5 && Age < 10) {
-      navigate("5-9th");
+      navigate("/5-9th");
     } else if (Age >= 10) {
-      navigate("/10-12th");
+      navigate("/10-12th/start");
     }
   };
 
