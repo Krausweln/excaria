@@ -67,7 +67,7 @@ const Index = ({ name }) => {
             className="w-[70%] mx-auto"
           />
           <h1 className="font-sansita pt-5 font-bold text-[#857D7D] text-lg tracking-wider text-center">
-            laki-laki Dan Perempuan
+            laki-laki dan Perempuan
           </h1>
         </Link>
 
@@ -85,39 +85,6 @@ const Index = ({ name }) => {
             Perilaku
           </h1>
         </Link>
-
-        {/* <a
-          href="BagaimanaKamuBisaLahir.html"
-          className=" w-[40%] flex flex-col justify-center items-center border bg-[#FFE7E3] py-8 relative top-12 rounded-2xl"
-        >
-          <LazyLoadImage
-          effect="opacity" src={lahir} alt="tubuh" className="w-[60%]" />
-          <h1 className="font-sansita pt-5 font-bold text-[#857D7D] text-lg tracking-wider text-center px-2">
-            Bagaimana Kamu Bisa Lahir
-          </h1 mx-auto>
-        </a>
-
-        <a
-          href="laki2-perempuan.html"
-          className=" w-[40%] flex flex-col justify-center items-center border bg-[#FFE7E3] py-7 relative bottom-12 rounded-2xl"
-        >
-          <LazyLoadImage
-          effect="opacity" src={lakidanperempuan} alt="tubuh" className="w-[70%]" />
-          <h1 className="font-sansita pt-5 font-bold text-[#857D7D] text-lg tracking-wider text-center">
-            laki-laki Dan Perempuan
-          </h1 mx-auto>
-        </a>
-
-        <a
-          href="prilaku.html"
-          className=" w-[40%] flex flex-col justify-center items-center border bg-[#FFE7E3] py-7 relative top-12 rounded-2xl"
-        >
-          <LazyLoadImage
-          effect="opacity" src={perilaku} alt="tubuh" className="w-[60%]" />
-          <h1 className="font-sansita pt-2 font-bold text-[#857D7D] text-lg tracking-wider">
-            Perilaku
-          </h1 mx-auto>
-        </a> */}
       </div>
     </section>
   );

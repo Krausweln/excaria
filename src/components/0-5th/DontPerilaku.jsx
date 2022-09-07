@@ -7,13 +7,14 @@ import do1 from "../img/38_20220830_103535_0005.png";
 import do2 from "../img/39_20220830_103535_0006.png";
 import do3 from "../img/75_20220830_103535_0042.png";
 import do4 from "../img/41_20220830_103535_0008.png";
+import dont4 from "../img/37_20220830_103535_0004.png";
 
 const DontPerilaku = () => {
   return (
     <div class="w-full h-screen bg-[#FFC6CC] flex justify-center items-center">
       <Swiper
         modules={[Pagination, Navigation]}
-        pagination={{ clickagle: true }}
+        pagination={{ clickable: true }}
       >
         <SwiperSlide>
           <div className=" flex items-center justify-center px-10 w-full h-screen">
@@ -54,6 +55,17 @@ const DontPerilaku = () => {
               <img src={do4} alt="rambut" class="w-[60%]" />
               <h1 class="font-bold font-sansita text-3xl text-center tracking-wider text-[#4F1F15] mb-10">
                 Membuat barang menjadi berantakan
+              </h1>
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className=" flex items-center justify-center px-10 w-full h-screen">
+            <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
+              <img src={dont4} alt="rambut" class="w-[60%]" />
+              <h1 class="font-bold font-sansita text-3xl text-center tracking-wider text-[#4F1F15] mb-10">
+                Menangis dengan kencang
               </h1>
             </div>
           </div>

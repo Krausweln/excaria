@@ -180,7 +180,7 @@ const AlatKontrasepsi = () => {
                   Vasektomi (vasectomy) adalah salah satu KB pria untuk mencegah
                   kehamilan pada pasangannya. Prosedur ini merupakan metode
                   kontrasepsi yang sifatnya permanen, tetapi pria tetap bisa
-                  melakukan ejakulasi dan orgasme.{" "}
+                  melakukan ejakulasi dan orgasme.
                 </p>
               </div>
             </div>

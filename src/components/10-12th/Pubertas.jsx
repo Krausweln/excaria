@@ -38,12 +38,13 @@ const Pubertas = () => {
               yakni antara 14 tahum sampai 16,5 tahun. <br />
               <br />
               Hal tersebut dikarenakan hormon yang mempengaruhi pertumbuhan
-              antara anak laki-laki dan perempuan berbeda
+              antara anak laki-laki dan perempuan berbeda.
             </p>
           </div>
         </div>
 
         <div className="h-[20vh] w-full flex items-center justify-center bg-[#1F5D3B]">
+          o
           <Link
             to="/10-12th/perubahan-fisik"
             className="w-full flex items-center justify-center"
