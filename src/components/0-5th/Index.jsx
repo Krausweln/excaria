@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage, placeholder } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
 // image imports
@@ -15,7 +15,7 @@ const Index = ({ name }) => {
     <section className="bg-[#FDF4F5] h-[120vh]">
       <div className="w-full h-[25vh] bg-[#FDBBBF] flex items-center px-3 rounded-bl-[70px]">
         <div className="flex justify-center gap-8 items-center">
-          <img
+          <LazyLoadImage
             effect="opacity"
             src={bayi}
             alt="Foto Bayi"
