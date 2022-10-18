@@ -13,15 +13,16 @@ import perilaku from "../img/7_20220625_072639_0006.png";
 const Index = ({ name }) => {
   return (
     <section className="bg-[#FDF4F5] h-[120vh]">
-      <div className="w-full h-[25vh] bg-[#FDBBBF] flex items-center px-3 rounded-bl-[70px]">
-        <div className="flex justify-center gap-8 items-center">
-          <LazyLoadImage
-            effect="opacity"
+      <div className="w-full h-[25vh] bg-[#FDBBBF] flex justify-between gap-8 items-center px-[3rem] rounded-bl-[70px]">
+        <div className="flex items-center">
+          <img
             src={bayi}
             alt="Foto Bayi"
-            className="w-[30%] border p-1 bg-white rounded-full"
+            className="w-[7rem] border p-1 bg-white rounded-full"
           />
-          <h1 className="font-sansita font-extrabold text-4xl">Hi, {name}</h1>
+        </div>
+        <div>
+          <h1 className="font-sansita font-extrabold text-3xl">Hi, {name}</h1>
         </div>
       </div>
 
