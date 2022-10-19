@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 // home components
 import Index from "./components/0-5th/Index";
 import Index1 from "./components/5-9th/Index1";
+import Index2 from "./components/10-12th/Index2";
+import Indexx from "./components/10-12th/Indexx";
 
 // components
 import BagianTubuh from "./components/0-5th/BagianTubuh";
@@ -19,10 +21,8 @@ import MateriPersiapanPubertas from "./components/5-9th/MateriPersiapanPubertas"
 import CaraMenjagaDiri from "./components/5-9th/CaraMenjagaDiri";
 import Salah from "./components/5-9th/Salah";
 import Benar from "./components/5-9th/Benar";
-import Index2 from "./components/10-12th/Index2";
 import Pubertas from "./components/10-12th/Pubertas";
 import PerubahanFisik from "./components/10-12th/PerubahanFisik";
-import Indexx from "./components/10-12th/Indexx";
 import AlatKontrasepsi from "./components/10-12th/AlatKontrasepsi";
 
 function App() {

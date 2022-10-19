@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import { Link } from "react-router-dom";
 
 import profile from "../img/testimg.jpg";
@@ -49,4 +49,4 @@ const Index1 = ({ name }) => {
   );
 };
 
-export default Index1;
+export default memo(Index1);

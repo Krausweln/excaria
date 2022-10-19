@@ -2,8 +2,8 @@ import React from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Audio } from "react-loader-spinner";
 import "react-lazy-load-image-component/src/effects/opacity.css";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 import rambut from "../img/12_20220628_191013_0000.png";
 import mata from "../img/13_20220628_191013_0001.png";
@@ -26,7 +26,7 @@ import "swiper/css/pagination";
 const BagianTubuh = () => {
   return (
     <>
-      <div className="w-full h-screen bg-[#FFC6CC]">
+      <div className="w-full h-screen bg-[#FFC6CC]" style={{}}>
         <Swiper
           modules={[Pagination, Navigation]}
           pagination={{ clickable: true }}
@@ -34,9 +34,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={rambut}
+                visibleByDefault={rambut === rambut}
                 alt="rambut"
                 className="w-2/5 mx-auto self-center justify-self-center"
               />
@@ -53,9 +55,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={mata}
+                visibleByDefault={mata === mata}
                 alt="mata"
                 className="w-2/5 mx-auto self-center justify-self-center"
               />
@@ -71,9 +75,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={telinga}
+                visibleByDefault={telinga === telinga}
                 alt="rambut"
                 className="w-[40%] mx-auto"
               />
@@ -89,9 +95,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={hidung}
+                visibleByDefault={hidung === hidung}
                 alt="hidung"
                 className="w-[40%] mx-auto"
               />
@@ -107,9 +115,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={mulut}
+                visibleByDefault={mulut === mulut}
                 alt="mulut"
                 className="w-[40%] mx-auto"
               />
@@ -125,9 +135,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={bahu}
+                visibleByDefault={bahu === bahu}
                 alt="bahu"
                 className="w-[40%] mx-auto"
               />
@@ -144,9 +156,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={payudara}
+                visibleByDefault={payudara === payudara}
                 alt="payudara"
                 className="w-[40%] mx-auto"
               />
@@ -162,9 +176,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={dada}
+                visibleByDefault={dada === dada}
                 alt="dada"
                 className="w-[40%] mx-auto"
               />
@@ -180,9 +196,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={tangan}
+                visibleByDefault={tangan === tangan}
                 alt="tangan"
                 className="w-[40%] mx-auto"
               />
@@ -199,9 +217,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={jari}
+                visibleByDefault={jari === jari}
                 alt="jari"
                 className="w-[40%] mx-auto"
               />
@@ -217,9 +237,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={perut}
+                visibleByDefault={perut === perut}
                 alt="perut"
                 className="w-[40%] mx-auto"
               />
@@ -236,9 +258,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={kemaluan}
+                visibleByDefault={kemaluan === kemaluan}
                 alt="alat kemaluan"
                 className="w-[40%] mx-auto"
               />
@@ -254,9 +278,11 @@ const BagianTubuh = () => {
           <SwiperSlide>
             <div className="w-full h-screen flex flex-col items-center justify-center">
               <LazyLoadImage
-                effect="opacity"
+                placeholderSrc="https://via.placeholder.com/150x270"
+                effect="blur"
                 wrapperClassName="w-full flex justify-center items-center"
                 src={kaki}
+                visibleByDefault={kaki === kaki}
                 alt="kaki"
                 className="w-[40%] mx-auto"
               />

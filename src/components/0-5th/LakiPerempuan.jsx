@@ -1,6 +1,9 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import image from "../img/33_20220830_103535_0000.png";
+
+import { P390x260 } from "../img/Image";
 
 const LakiPerempuan = () => {
   const bullet = {
@@ -10,7 +13,14 @@ const LakiPerempuan = () => {
   return (
     <section>
       <div className="w-full bg-[#FBCBD5]">
-        <img src={image} alt="" className="px-5 pt-5" />
+        <LazyLoadImage
+          effect="blur"
+          placeholderSrc={P390x260}
+          visibleByDefault={image === "../img/33_20220830_103535_0000.png"}
+          src={image}
+          alt="a boy and a girl"
+          className="px-5 pt-5"
+        />
 
         <div className="w-full bg-[#E47A8B] py-4">
           <h1 className="font-sansita tracking-wide text-3xl text-center font-bold text-[#421113]">

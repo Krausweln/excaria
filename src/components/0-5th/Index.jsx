@@ -1,6 +1,7 @@
-import React from "react";
+import { memo } from "react";
 import { Link } from "react-router-dom";
 import { LazyLoadImage, placeholder } from "react-lazy-load-image-component";
+import { BeatLoader } from "react-spinners";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
 // image imports
@@ -10,13 +11,19 @@ import lakidanperempuan from "../img/6_20220625_072639_0005.png";
 import lahir from "../img/5_20220625_072639_0004.png";
 import perilaku from "../img/7_20220625_072639_0006.png";
 
+// placeholder images
+import { P100 } from "../img/Image";
+import { P110x120 } from "../img/Image";
+
 const Index = ({ name }) => {
   return (
     <section className="bg-[#FDF4F5] h-[120vh]">
       <div className="w-full h-[25vh] bg-[#FDBBBF] flex justify-between gap-8 items-center px-[3rem] rounded-bl-[70px]">
         <div className="flex items-center">
-          <img
+          <LazyLoadImage
+            placeholderSrc={P100}
             src={bayi}
+            visibleByDefault={bayi === "../img/3_20220625_073601_0000.png"}
             alt="Foto Bayi"
             className="w-[7rem] border p-1 bg-white rounded-full"
           />
@@ -32,7 +39,9 @@ const Index = ({ name }) => {
           className="w-[40%] flex flex-col justify-center items-center  bg-[#FFE7E3] py-7 rounded-2xl m-0"
         >
           <LazyLoadImage
-            effect="opacity"
+            placeholderSrc={P110x120}
+            effect="blur"
+            visibleByDefault={tubuh === "../img/4_20220625_072639_0003.png"}
             src={tubuh}
             alt="tubuh"
             className="w-[70%] mx-auto"
@@ -47,7 +56,9 @@ const Index = ({ name }) => {
           className=" w-[40%] flex flex-col justify-center items-center border bg-[#FFE7E3] py-8 relative top-12 rounded-2xl"
         >
           <LazyLoadImage
-            effect="opacity"
+            placeholderSrc={P110x120}
+            effect="blur"
+            visibleByDefault={lahir === "../img/5_20220625_072639_0004.png"}
             src={lahir}
             alt="tubuh"
             className="w-[60%] mx-auto"
@@ -62,7 +73,11 @@ const Index = ({ name }) => {
           className=" tubuh w-[40%] flex flex-col justify-center items-center border bg-[#FFE7E3] py-7 relative bottom-12 rounded-2xl"
         >
           <LazyLoadImage
-            effect="opacity"
+            placeholderSrc={P110x120}
+            effect="blur"
+            visibleByDefault={
+              lakidanperempuan === "../img/6_20220625_072639_0005.png"
+            }
             src={lakidanperempuan}
             alt="tubuh"
             className="w-[70%] mx-auto"
@@ -77,7 +92,9 @@ const Index = ({ name }) => {
           className=" w-[40%] flex flex-col justify-center items-center border bg-[#FFE7E3] py-7 relative top-12 rounded-2xl"
         >
           <LazyLoadImage
-            effect="opacity"
+            placeholderSrc={P110x120}
+            effect="blur"
+            visibleByDefault={perilaku === "../img/7_20220625_072639_0006.png"}
             src={perilaku}
             alt="tubuh"
             className="w-[60%] mx-auto"
@@ -91,4 +108,4 @@ const Index = ({ name }) => {
   );
 };
 
-export default Index;
+export default memo(Index);

@@ -104,7 +104,6 @@ const MateriPersiapanPubertas = () => {
             </div>
           </div>
         </div>
-
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex justify-between items-center px-5 py-3">
             <div className="w-[40%]">

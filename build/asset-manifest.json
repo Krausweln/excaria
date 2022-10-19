@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ac220f0.css",
-    "main.js": "/static/js/main.b792c212.js",
+    "main.css": "/static/css/main.5338a6f1.css",
+    "main.js": "/static/js/main.558a364c.js",
     "static/js/787.886b6157.chunk.js": "/static/js/787.886b6157.chunk.js",
     "static/media/testimg.jpg": "/static/media/testimg.5b80a88ca17d842f475f.jpg",
     "static/media/12_20220628_191013_0000.png": "/static/media/12_20220628_191013_0000.9e93434f8760b82132b7.png",
@@ -44,6 +44,7 @@
     "static/media/85_20220830_103535_0052.png": "/static/media/85_20220830_103535_0052.08b96c7ff25871387e7f.png",
     "static/media/65_20220830_103535_0032asdasdasdasdad.png": "/static/media/65_20220830_103535_0032asdasdasdasdad.ee465587801791d4ec2d.png",
     "static/media/56_20220830_103535_0023.png": "/static/media/56_20220830_103535_0023.8bb71077fe976ca725c8.png",
+    "static/media/87_20220830_103535_0054.png": "/static/media/87_20220830_103535_0054.229e9140dd3c3e5f2f1d.png",
     "static/media/motherwbaby.png": "/static/media/motherwbaby.9ad103398f77d3cd49f3.png",
     "static/media/33_20220830_103535_0000.png": "/static/media/33_20220830_103535_0000.b3da6c0caf809cf79ed4.png",
     "static/media/21_20220628_211931_0004.png": "/static/media/21_20220628_211931_0004.7299075c237bb4535322.png",
@@ -74,12 +75,12 @@
     "static/media/salah.png": "/static/media/salah.30716bf19ae6274bb909.png",
     "static/media/19_20220628_211931_0002-2.png": "/static/media/19_20220628_211931_0002-2.a2e3c0729b8cd1133781.png",
     "index.html": "/index.html",
-    "main.7ac220f0.css.map": "/static/css/main.7ac220f0.css.map",
-    "main.b792c212.js.map": "/static/js/main.b792c212.js.map",
+    "main.5338a6f1.css.map": "/static/css/main.5338a6f1.css.map",
+    "main.558a364c.js.map": "/static/js/main.558a364c.js.map",
     "787.886b6157.chunk.js.map": "/static/js/787.886b6157.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ac220f0.css",
-    "static/js/main.b792c212.js"
+    "static/css/main.5338a6f1.css",
+    "static/js/main.558a364c.js"
   ]
 }
