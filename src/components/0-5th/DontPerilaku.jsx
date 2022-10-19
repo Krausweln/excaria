@@ -2,6 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "../../style.css";
 
 //import assets
 import do1 from "../img/38_20220830_103535_0005.png";
@@ -22,6 +24,7 @@ const DontPerilaku = () => {
           <div className=" flex items-center justify-center px-10 w-full h-screen">
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
+                effect="blur"
                 placeholderSrc={P190}
                 src={do1}
                 alt="rambut"
@@ -38,6 +41,7 @@ const DontPerilaku = () => {
           <div className=" flex items-center justify-center px-10 w-full h-screen">
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl p-5">
               <LazyLoadImage
+                effect="blur"
                 placeholderSrc={P190}
                 src={do2}
                 alt="rambut"
@@ -54,6 +58,7 @@ const DontPerilaku = () => {
           <div className=" flex items-center justify-center px-10 w-full h-screen">
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
+                effect="blur"
                 placeholderSrc={P190}
                 src={do3}
                 alt="rambut"
@@ -70,6 +75,7 @@ const DontPerilaku = () => {
           <div className=" flex items-center justify-center px-10 w-full h-screen">
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
+                effect="blur"
                 placeholderSrc={P190}
                 src={do4}
                 alt="rambut"
@@ -86,6 +92,7 @@ const DontPerilaku = () => {
           <div className=" flex items-center justify-center px-10 w-full h-screen">
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
+                effect="blur"
                 placeholderSrc={P190}
                 src={dont4}
                 alt="rambut"
