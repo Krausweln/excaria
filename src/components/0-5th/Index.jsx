@@ -1,7 +1,6 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
-import { LazyLoadImage, placeholder } from "react-lazy-load-image-component";
-import { BeatLoader } from "react-spinners";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
 // image imports
@@ -23,7 +22,7 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P100}
             src={bayi}
-            visibleByDefault={bayi === "../img/3_20220625_073601_0000.png"}
+            visibleByDefault={bayi === bayi}
             alt="Foto Bayi"
             className="w-[7rem] border p-1 bg-white rounded-full"
           />
@@ -41,7 +40,7 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={tubuh === "../img/4_20220625_072639_0003.png"}
+            visibleByDefault={tubuh === tubuh}
             src={tubuh}
             alt="tubuh"
             className="w-[70%] mx-auto"
@@ -58,7 +57,7 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={lahir === "../img/5_20220625_072639_0004.png"}
+            visibleByDefault={lahir === lahir}
             src={lahir}
             alt="tubuh"
             className="w-[60%] mx-auto"
@@ -75,9 +74,7 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={
-              lakidanperempuan === "../img/6_20220625_072639_0005.png"
-            }
+            visibleByDefault={lakidanperempuan === lakidanperempuan}
             src={lakidanperempuan}
             alt="tubuh"
             className="w-[70%] mx-auto"
@@ -94,7 +91,7 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={perilaku === "../img/7_20220625_072639_0006.png"}
+            visibleByDefault={perilaku === perilaku}
             src={perilaku}
             alt="tubuh"
             className="w-[60%] mx-auto"

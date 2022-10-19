@@ -28,6 +28,7 @@ const DoPerilaku = () => {
                 placeholderSrc={P190x330}
                 wrapperClassName="flex justify-center items-center mx-auto w-fit"
                 className="w-[60%] "
+                visibleByDefault={do1 === do1}
                 src={do1}
                 alt="rambut"
               />
@@ -46,6 +47,7 @@ const DoPerilaku = () => {
                 placeholderSrc={P190x330}
                 wrapperClassName="flex justify-center items-center mx-auto w-fit"
                 className="w-[60%]"
+                visibleByDefault={do2 === do2}
                 src={do2}
                 alt="rambut"
               />
@@ -64,6 +66,7 @@ const DoPerilaku = () => {
                 placeholderSrc={P190x330}
                 wrapperClassName="flex justify-center items-center mx-auto w-fit"
                 className="w-[60%] "
+                visibleByDefault={do3 === do3}
                 src={do3}
                 alt="rambut"
               />

@@ -2,7 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import "../../style.css";
 
 //import assets
@@ -11,7 +10,7 @@ import do2 from "../img/39_20220830_103535_0006.png";
 import do3 from "../img/75_20220830_103535_0042.png";
 import do4 from "../img/41_20220830_103535_0008.png";
 import dont4 from "../img/37_20220830_103535_0004.png";
-import { P190 } from "../img/Image";
+import { P165x290, P360x240 } from "../img/Image";
 
 const DontPerilaku = () => {
   return (
@@ -25,7 +24,9 @@ const DontPerilaku = () => {
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
                 effect="blur"
-                placeholderSrc={P190}
+                placeholderSrc={P360x240}
+                wrapperClassName="flex justify-center items-center"
+                visibleByDefault={do1 === do1}
                 src={do1}
                 alt="rambut"
                 class="w-[60%]"
@@ -42,7 +43,9 @@ const DontPerilaku = () => {
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl p-5">
               <LazyLoadImage
                 effect="blur"
-                placeholderSrc={P190}
+                placeholderSrc={P360x240}
+                wrapperClassName="flex justify-center items-center"
+                visibleByDefault={do2 === do2}
                 src={do2}
                 alt="rambut"
                 class="w-[60%]"
@@ -59,7 +62,9 @@ const DontPerilaku = () => {
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
                 effect="blur"
-                placeholderSrc={P190}
+                placeholderSrc={P360x240}
+                wrapperClassName="flex justify-center items-center"
+                visibleByDefault={do3 === do3}
                 src={do3}
                 alt="rambut"
                 class="w-[60%]"
@@ -76,7 +81,9 @@ const DontPerilaku = () => {
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
                 effect="blur"
-                placeholderSrc={P190}
+                placeholderSrc={P360x240}
+                wrapperClassName="flex justify-center items-center"
+                visibleByDefault={do4 === do4}
                 src={do4}
                 alt="rambut"
                 class="w-[60%]"
@@ -93,7 +100,9 @@ const DontPerilaku = () => {
             <div class="bg-[#FFDCE0] flex flex-col justify-center items-center rounded-xl">
               <LazyLoadImage
                 effect="blur"
-                placeholderSrc={P190}
+                placeholderSrc={P360x240}
+                wrapperClassName="flex justify-center items-center"
+                visibleByDefault={dont4 === dont4}
                 src={dont4}
                 alt="rambut"
                 class="w-[60%]"
