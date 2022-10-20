@@ -14,6 +14,7 @@ import SwiperBackButton from "./SwiperBackButton";
 import SwiperNextbutton from "./SwiperNextbutton";
 
 import "swiper/css/effect-fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AlatKontrasepsi = () => {
   const [count, setCount] = useState(0);
@@ -32,8 +33,16 @@ const AlatKontrasepsi = () => {
         >
           <SwiperSlide>
             <div className="h-[50vh] w-full relative flex">
-              <img src={imgbg} alt="" className="w-[90%] opacity-70 m-auto" />
-              <img
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
+                src={imgbg}
+                alt=""
+                className="w-[90%] opacity-70 m-auto"
+              />
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgPilKB}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -57,8 +66,16 @@ const AlatKontrasepsi = () => {
           <SwiperSlide>
             {/* Implan slide */}
             <div className="h-[50vh] w-full relative flex">
-              <img src={imgbg} alt="" className="w-[90%] opacity-70 m-auto" />
-              <img
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
+                src={imgbg}
+                alt=""
+                className="w-[90%] opacity-70 m-auto"
+              />
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgImplan}
                 alt=""
                 className="w-[40%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -81,8 +98,16 @@ const AlatKontrasepsi = () => {
           <SwiperSlide>
             {/* IUD slide */}
             <div className="h-[50vh] w-full relative flex">
-              <img src={imgbg} alt="" className="w-[90%] opacity-70 m-auto" />
-              <img
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
+                src={imgbg}
+                alt=""
+                className="w-[90%] opacity-70 m-auto"
+              />
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgIUD}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -106,8 +131,16 @@ const AlatKontrasepsi = () => {
           <SwiperSlide>
             {/* condom slide */}
             <div class="h-[50vh] w-full relative flex">
-              <img src={imgbg} alt="" class="w-[90%] opacity-70 m-auto" />
-              <img
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
+                src={imgbg}
+                alt=""
+                class="w-[90%] opacity-70 m-auto"
+              />
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgKondom}
                 alt=""
                 class="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -130,8 +163,16 @@ const AlatKontrasepsi = () => {
           <SwiperSlide>
             {/* MOW slide */}
             <div className="h-[50vh] w-full relative flex">
-              <img src={imgbg} alt="" className="w-[90%] opacity-70 m-auto" />
-              <img
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
+                src={imgbg}
+                alt=""
+                className="w-[90%] opacity-70 m-auto"
+              />
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgMOW}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -157,8 +198,16 @@ const AlatKontrasepsi = () => {
           <SwiperSlide>
             {/* mop slide */}
             <div className="h-[50vh] w-full relative flex">
-              <img src={imgbg} alt="" className="w-[90%] opacity-70 m-auto" />
-              <img
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
+                src={imgbg}
+                alt=""
+                className="w-[90%] opacity-70 m-auto"
+              />
+              <LazyLoadImage
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgMop}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Pagination, slideShadows } from "swiper";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+import "../../style.css";
 import "swiper/css/effect-cards";
 
 //import assets
@@ -14,6 +15,8 @@ import do4 from "../img/assets/do4caramenjaga.png";
 import dont1 from "../img/assets/dont1caramenjaga.png";
 import dont2 from "../img/assets/dont2caramenjaga.png";
 import dont3 from "../img/assets/dont3caramenjaga.png";
+
+import { P140 } from "../img/Image";
 
 const CaraMenjagaDiri = () => {
   return (
@@ -35,7 +38,15 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <LazyLoadImage src={do1} alt="" className="w-5/12" />
+                  <LazyLoadImage
+                    placeholderSrc={P140}
+                    wrapperClassName="flex justify-center items-center"
+                    effect="blur"
+                    visibleByDefault={do1 === do1}
+                    src={do1}
+                    alt=""
+                    className="w-5/12"
+                  />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Tidak mudah percaya pada orang lain
@@ -48,7 +59,15 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <LazyLoadImage src={do2} alt="" className="w-7/12" />
+                  <LazyLoadImage
+                    placeholderSrc={P140}
+                    wrapperClassName="flex justify-center items-center"
+                    effect="blur"
+                    visibleByDefault={do2 === do2}
+                    src={do2}
+                    alt=""
+                    className="w-7/12"
+                  />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Tidak membiarkan tubuh disentuh sembarangan oleh orang
@@ -62,7 +81,15 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-3 rounded-lg bg-caramenjagado">
-                  <LazyLoadImage src={do3} alt="" className="w-7/12" />
+                  <LazyLoadImage
+                    placeholderSrc={P140}
+                    wrapperClassName="flex justify-center items-center"
+                    effect="blur"
+                    visibleByDefault={do3 === do3}
+                    src={do3}
+                    alt=""
+                    className="w-7/12"
+                  />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Tidak mudah menerima makanan dari orang lain
@@ -77,7 +104,10 @@ const CaraMenjagaDiri = () => {
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
                   <LazyLoadImage
                     src={do4}
+                    placeholderSrc={P140}
+                    wrapperClassName="flex justify-center items-center"
                     alt=""
+                    visibleByDefault={do4 === do4}
                     className="w-7/12 md:w-4/12"
                   />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
@@ -110,7 +140,15 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <LazyLoadImage src={dont1} alt="" className="w-5/12" />
+                  <LazyLoadImage
+                    placeholderSrc={P140}
+                    wrapperClassName="flex justify-center items-center"
+                    effect="blur"
+                    visibleByDefault={dont1 === dont1}
+                    src={dont1}
+                    alt=""
+                    className="w-5/12"
+                  />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Mudah percaya pada orang lain
@@ -123,7 +161,15 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-4 rounded-lg bg-caramenjagado">
-                  <LazyLoadImage src={dont2} alt="" className="w-5/12" />
+                  <LazyLoadImage
+                    placeholderSrc={P140}
+                    wrapperClassName="flex justify-center items-center"
+                    effect="blur"
+                    visibleByDefault={dont2 === dont2}
+                    src={dont2}
+                    alt=""
+                    className="w-5/12"
+                  />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Membiarkan tubuh disentuh orang lain secara sembarangan
@@ -137,7 +183,15 @@ const CaraMenjagaDiri = () => {
             <SwiperSlide>
               <div className="swiper-slide w-full h-[50vh] flex justify-center items-center">
                 <div className="w-7/12 h-11/12 flex flex-col items-center py-3 rounded-lg bg-caramenjagado">
-                  <LazyLoadImage src={dont3} alt="" className="w-8/12" />
+                  <LazyLoadImage
+                    placeholderSrc={P140}
+                    wrapperClassName="flex justify-center items-center"
+                    effect="blur"
+                    visibleByDefault={dont3 === dont3}
+                    src={dont3}
+                    alt=""
+                    className="w-8/12"
+                  />
                   <div className="w-11/12 bg-white rounded-xl py-4 m-2 text-center">
                     <p className="text-lg font-sansita">
                       Mudah menerima makanan dari orang lain

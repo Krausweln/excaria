@@ -21,8 +21,9 @@ const Index2 = ({ name }) => {
             </div>
             <div className="w-6/12 z-10">
               <LazyLoadImage
-                effect="opacity"
-                loading="yes"
+                effect="blur"
+                placeholderSrc="https://via.placeholder.com/78x84"
+                visibleByDefault={imgtop === imgtop}
                 src={imgtop}
                 alt=""
                 className="w-full mx-auto"
@@ -43,7 +44,9 @@ const Index2 = ({ name }) => {
               <div className="bg-white rounded-xl flex m-4">
                 <div className="w-1/4 bg-[#92AF98] m-2 rounded-xl">
                   <LazyLoadImage
-                    effect="opacity"
+                    effect="blur"
+                    placeholderSrc="https://via.placeholder.com/78x84"
+                    visibleByDefault={img1 === img1}
                     src={img1}
                     alt=""
                     className="w-full mx-auto"
@@ -59,7 +62,9 @@ const Index2 = ({ name }) => {
               <div className="bg-white rounded-xl flex m-4">
                 <div className="w-1/4 flex justify-center items-center bg-[#92AF98] m-2 p-1 rounded-xl max-h-[83.52px] overflow-hidden">
                   <LazyLoadImage
-                    effect="opacity"
+                    effect="blur"
+                    placeholderSrc="https://via.placeholder.com/78x84"
+                    visibleByDefault={img3 === img3}
                     src={img3}
                     alt=""
                     className="w-3/4 mx-auto"
@@ -77,7 +82,9 @@ const Index2 = ({ name }) => {
               <div className="bg-white rounded-xl flex m-4">
                 <div className="w-1/4 bg-[#92AF98] m-2 p-2 rounded-xl">
                   <LazyLoadImage
-                    effect="opacity"
+                    effect="blur"
+                    placeholderSrc="https://via.placeholder.com/78x84"
+                    visibleByDefault={img2 === img2}
                     src={img2}
                     alt=""
                     className="w-full mx-auto"

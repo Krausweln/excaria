@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 //import assets
 import img0 from "../img/48_20220830_103535_0015.png";
@@ -18,7 +19,13 @@ const MateriPersiapanPubertas = () => {
       <div className="w-full px-5 py-5">
         <div className="flex justify-between items-center bg-[#FFF7EC] rounded-lg px-3">
           <div className="w-[50%]">
-            <img src={img0} alt="" className="w-[90%]" />
+            <LazyLoadImage
+              placeholderSrc="https://via.placeholder.com/75https://via.placeholder.com/150x260"
+              effect="blur"
+              src={img0}
+              alt=""
+              className="w-[90%]"
+            />
           </div>
           <div className="w-[50%]">
             <h1 className="text-center text-3xl font-bold tracking-wide text-[#4F1F15]">
@@ -33,7 +40,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex flex-row-reverse justify-center items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img1}
                 alt=""
                 className="w-[60%] py-3 px-2 ml-14 bg-[#E19488] rounded-xl"
@@ -48,7 +57,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex justify-between items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img2}
                 alt=""
                 className="w-[50%] py-3 px-2 bg-[#E19488] rounded-xl"
@@ -63,7 +74,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex flex-row-reverse justify-center items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img3}
                 alt=""
                 className="w-[60%] py-3 px-2 ml-14 bg-[#E19488] rounded-xl"
@@ -78,7 +91,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex justify-between items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img4}
                 alt=""
                 className="w-[50%] py-3 px-2 bg-[#E19488] rounded-xl"
@@ -93,7 +108,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex flex-row-reverse justify-center items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img5}
                 alt=""
                 className="w-[60%] py-3 px-2 ml-14 bg-[#E19488] rounded-xl"
@@ -107,7 +124,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex justify-between items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img6}
                 alt=""
                 className="w-[50%] py-3 px-2 bg-[#E19488] rounded-xl"
@@ -122,7 +141,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex flex-row-reverse justify-center items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img7}
                 alt=""
                 className="w-[60%] py-3 px-2 ml-14 bg-[#E19488] rounded-xl"
@@ -137,7 +158,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex justify-between items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img8}
                 alt=""
                 className="w-[50%] py-3 px-2 bg-[#E19488] rounded-xl"
@@ -152,7 +175,9 @@ const MateriPersiapanPubertas = () => {
         <div className="w-[100%] mx-auto rounded-xl bg-white mt-5">
           <div className="flex flex-row-reverse justify-center items-center px-5 py-3">
             <div className="w-[40%]">
-              <img
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/75"
+                effect="blur"
                 src={img9}
                 alt=""
                 className="w-[60%] py-3 px-2 ml-14 bg-[#E19488] rounded-xl"

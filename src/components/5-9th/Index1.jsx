@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
 import profile from "../img/testimg.jpg";
@@ -8,9 +9,11 @@ const Index1 = ({ name }) => {
     <section>
       <div className="min-h-screen w-full bg-[#FFC6CC] flex flex-col justify-evenly items-center">
         <div className="w-3/4 flex flex-col gap-8 relative bottom-12">
-          <img
+          <LazyLoadImage
+            visibleByDefault={profile === profile}
+            effect="blur"
             src={profile}
-            alt=""
+            alt="profile picture"
             className="w-28 h-28 rounded-full relative -left-2"
           />
           <div>

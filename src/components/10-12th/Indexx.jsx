@@ -5,12 +5,19 @@ import { Link } from "react-router-dom";
 
 import img2 from "../img/65_20220830_103535_0032asdasdasdasdad.png";
 import img1 from "../img/67_20220830_103535_0034.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Indexx = ({ name }) => {
   return (
     <section>
       <div className="w-full bg-[#FDEAE0] pt-5">
-        <img src={img2} alt="" className="w-[88%] m-auto" />
+        <LazyLoadImage
+          placeholderSrc="https://via.placeholder.com/500"
+          effect="blur"
+          src={img2}
+          alt="cartoon boy"
+          className="w-[88%] m-auto"
+        />
       </div>
 
       <div className="w-full">

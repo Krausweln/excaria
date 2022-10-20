@@ -24,10 +24,21 @@ import Benar from "./components/5-9th/Benar";
 import Pubertas from "./components/10-12th/Pubertas";
 import PerubahanFisik from "./components/10-12th/PerubahanFisik";
 import AlatKontrasepsi from "./components/10-12th/AlatKontrasepsi";
+import { useEffect } from "react";
 
 function App() {
   const [input, setInput] = useState("");
   const [age, setAge] = useState("");
+
+  useEffect(() => {
+    const get = JSON.parse(localStorage.getItem("nameAge"));
+    setInput(get.input);
+    setAge(get.age);
+    return () => {
+      setInput("");
+      setAge("");
+    };
+  }, [input, age]);
 
   const inputMemo = useMemo(() => {
     return input;
@@ -63,7 +74,7 @@ function App() {
       <Route path="/5-9th/cara-menjaga-diri" element={<CaraMenjagaDiri />} />
       <Route path="/10-12th" element={<Index2 name={inputMemo} />} />
       <Route path="/10-12th/start" element={<Indexx name={inputMemo} />} />
-      <Route path="/10-12th/pubertas" element={<Pubertas />} />
+      <Route path="/10-12th/pubertas" element={<Pubertas name={inputMemo} />} />
       <Route path="/10-12th/perubahan-fisik" element={<PerubahanFisik />} />
       <Route path="/10-12th/alat-kontrasepsi" element={<AlatKontrasepsi />} />
     </Routes>

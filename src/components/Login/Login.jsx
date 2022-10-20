@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 const Login = ({ input, setInput, age, setAge }) => {
   const navigate = useNavigate();
@@ -32,8 +31,7 @@ const Login = ({ input, setInput, age, setAge }) => {
   //   }, []);
 
   useEffect(() => {
-    console.log(input);
-    console.log(age);
+    localStorage.setItem("nameAge", JSON.stringify({ input, age }));
   }, [input, age]);
 
   return (

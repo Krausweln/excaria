@@ -1,8 +1,10 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
 import img1 from "../img/45_20220830_103535_0012.png";
 import img from "../img/46_20220830_103535_0013.png";
+import { P240x420 } from "../img/Image";
 
 const PersiapanPubertas = () => {
   return (
@@ -18,7 +20,14 @@ const PersiapanPubertas = () => {
         </div>
 
         <div className="w-full flex justify-center">
-          <img src={img1} alt="" className="w-[60%]" />
+          <LazyLoadImage
+            effect="blur"
+            src={img1}
+            placeholderSrc={P240x420}
+            visibleByDefault={img1 === img1}
+            alt=""
+            className="w-[60%]"
+          />
         </div>
 
         <div className="w-[60%] mx-auto rounded-lg bg-white">

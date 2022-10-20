@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import img1 from "../img/profile10-12th.png";
 
-const Pubertas = () => {
+const Pubertas = ({ name }) => {
   return (
     <section>
       <div className="w-full min-h-screen flex flex-col bg-[#F6E3C3]">
@@ -11,7 +11,7 @@ const Pubertas = () => {
           <div className="left-8 w-8/12 h-fit flex items-center">
             <div className="relative left-4 py-2 pr-4 w-full h-fit bg-white rounded-l-[2rem] text-center z-0">
               <p className="text-2xl font-bold font-sansita tracking-wide">
-                Hi, Chesya!
+                Hi, {name}
               </p>
             </div>
             <div className="w-6/12 z-10">
