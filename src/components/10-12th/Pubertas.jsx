@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
 import img1 from "../img/profile10-12th.png";
@@ -15,7 +16,14 @@ const Pubertas = ({ name }) => {
               </p>
             </div>
             <div className="w-6/12 z-10">
-              <img src={img1} alt="" className="w-full" />
+              <LazyLoadImage
+                placeholderSrc="https://via.placeholder.com/85"
+                effect="blur"
+                src={img1}
+                visibleByDefault={img1 === img1}
+                alt="profile"
+                className="w-full"
+              />
             </div>
           </div>
         </div>

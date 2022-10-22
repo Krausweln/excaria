@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Pagination, EffectFade } from "swiper";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import {
   imgbg,
   imgPilKB,
@@ -18,7 +18,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AlatKontrasepsi = () => {
   const [count, setCount] = useState(0);
-  const swiper = useSwiper();
 
   return (
     <section>
@@ -26,7 +25,6 @@ const AlatKontrasepsi = () => {
         <Swiper
           modules={[Pagination, EffectFade]}
           onRealIndexChange={(index) => {
-            console.log(index.realIndex);
             return setCount(index.realIndex);
           }}
           pagination={{ clickable: true }}
@@ -34,15 +32,12 @@ const AlatKontrasepsi = () => {
           <SwiperSlide>
             <div className="h-[50vh] w-full relative flex">
               <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgbg}
+                placeholderSrc="https://via.placeholder.com/350x310"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
-              <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
+              <img
                 src={imgPilKB}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -67,15 +62,12 @@ const AlatKontrasepsi = () => {
             {/* Implan slide */}
             <div className="h-[50vh] w-full relative flex">
               <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgbg}
+                placeholderSrc="https://via.placeholder.com/350x310"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
-              <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
+              <img
                 src={imgImplan}
                 alt=""
                 className="w-[40%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -99,15 +91,12 @@ const AlatKontrasepsi = () => {
             {/* IUD slide */}
             <div className="h-[50vh] w-full relative flex">
               <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgbg}
+                placeholderSrc="https://via.placeholder.com/350x310"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
-              <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
+              <img
                 src={imgIUD}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -132,15 +121,12 @@ const AlatKontrasepsi = () => {
             {/* condom slide */}
             <div class="h-[50vh] w-full relative flex">
               <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgbg}
+                placeholderSrc="https://via.placeholder.com/350x310"
                 alt=""
                 class="w-[90%] opacity-70 m-auto"
               />
-              <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
+              <img
                 src={imgKondom}
                 alt=""
                 class="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -164,15 +150,12 @@ const AlatKontrasepsi = () => {
             {/* MOW slide */}
             <div className="h-[50vh] w-full relative flex">
               <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgbg}
+                placeholderSrc="https://via.placeholder.com/350x310"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
-              <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
+              <img
                 src={imgMOW}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"
@@ -199,15 +182,12 @@ const AlatKontrasepsi = () => {
             {/* mop slide */}
             <div className="h-[50vh] w-full relative flex">
               <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
                 src={imgbg}
+                placeholderSrc="https://via.placeholder.com/350x310"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
-              <LazyLoadImage
-                effect="blur"
-                placeholderSrc="https://via.placeholder.com/350x310"
+              <img
                 src={imgMop}
                 alt=""
                 className="w-[50%] absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] m-auto"

@@ -1,12 +1,14 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
+import { Link } from "react-router-dom";
 
 import imgtop from "../img/profile10-12th.png";
 import img1 from "../img/girlwtowel.png";
 import img3 from "../img/girl.png";
 import img2 from "../img/assets/contraception.png";
-import { Link } from "react-router-dom";
+
+import placeholder from "../placeholders/P78x84.png";
 
 const Index2 = ({ name }) => {
   return (
@@ -22,8 +24,7 @@ const Index2 = ({ name }) => {
             <div className="w-6/12 z-10">
               <LazyLoadImage
                 effect="blur"
-                placeholderSrc="https://via.placeholder.com/78x84"
-                visibleByDefault={imgtop === imgtop}
+                placeholderSrc={placeholder}
                 src={imgtop}
                 alt=""
                 className="w-full mx-auto"
@@ -45,8 +46,7 @@ const Index2 = ({ name }) => {
                 <div className="w-1/4 bg-[#92AF98] m-2 rounded-xl">
                   <LazyLoadImage
                     effect="blur"
-                    placeholderSrc="https://via.placeholder.com/78x84"
-                    visibleByDefault={img1 === img1}
+                    placeholderSrc={placeholder}
                     src={img1}
                     alt=""
                     className="w-full mx-auto"
@@ -63,8 +63,7 @@ const Index2 = ({ name }) => {
                 <div className="w-1/4 flex justify-center items-center bg-[#92AF98] m-2 p-1 rounded-xl max-h-[83.52px] overflow-hidden">
                   <LazyLoadImage
                     effect="blur"
-                    placeholderSrc="https://via.placeholder.com/78x84"
-                    visibleByDefault={img3 === img3}
+                    placeholderSrc={placeholder}
                     src={img3}
                     alt=""
                     className="w-3/4 mx-auto"
@@ -83,8 +82,7 @@ const Index2 = ({ name }) => {
                 <div className="w-1/4 bg-[#92AF98] m-2 p-2 rounded-xl">
                   <LazyLoadImage
                     effect="blur"
-                    placeholderSrc="https://via.placeholder.com/78x84"
-                    visibleByDefault={img2 === img2}
+                    placeholderSrc={placeholder}
                     src={img2}
                     alt=""
                     className="w-full mx-auto"

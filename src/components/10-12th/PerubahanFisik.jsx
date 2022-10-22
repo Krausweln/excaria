@@ -1,6 +1,7 @@
 import React from "react";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 //import images
 import img1 from "../img/75_20220830_103535_0042.png";
@@ -9,7 +10,8 @@ import img3 from "../img/78_20220830_103535_0045.png";
 import img4 from "../img/79_20220830_103535_0046.png";
 import img5 from "../img/80_20220830_103535_0047.png";
 import img6 from "../img/81_20220830_103535_0048.png";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
+import { P180x280 } from "../img/Image";
 
 const PerubahanFisik = () => {
   return (
@@ -31,8 +33,7 @@ const PerubahanFisik = () => {
                 <div className="bg-[#F3BE62] flex flex-col justify-center items-center rounded-xl">
                   <LazyLoadImage
                     effect="blur"
-                    placeholderSrc="https://via.placeholder.com/180x280"
-                    visibleByDefault={img1 === img1}
+                    placeholderSrc={P180x280}
                     src={img1}
                     alt="rambut"
                     className="w-[70%] m-auto"
@@ -49,7 +50,7 @@ const PerubahanFisik = () => {
                 <div className="bg-[#F3BE62] flex flex-col justify-center items-center rounded-xl">
                   <LazyLoadImage
                     effect="blur"
-                    placeholderSrc="https://via.placeholder.com/180x280"
+                    placeholderSrc={P180x280}
                     visibleByDefault={img2 === img2}
                     src={img2}
                     alt="rambut"
@@ -65,7 +66,10 @@ const PerubahanFisik = () => {
             <SwiperSlide>
               <div className="h-[65vh] flex items-center justify-center px-10">
                 <div className="bg-[#F3BE62] flex flex-col justify-center items-center rounded-xl">
-                  <img
+                  <LazyLoadImage
+                    effect="blur"
+                    placeholderSrc={P180x280}
+                    visibleByDefault={img3 === img3}
                     src={img3}
                     alt="rambut"
                     className="w-[60%] m-auto pt-3"
@@ -82,7 +86,7 @@ const PerubahanFisik = () => {
                 <div className="bg-[#F3BE62] flex flex-col justify-center items-center rounded-xl">
                   <LazyLoadImage
                     effect="blur"
-                    placeholderSrc="https://via.placeholder.com/180x280"
+                    placeholderSrc={P180x280}
                     visibleByDefault={img4 === img4}
                     src={img4}
                     alt="rambut"
@@ -98,8 +102,11 @@ const PerubahanFisik = () => {
             <SwiperSlide>
               <div className="h-[65vh] flex items-center justify-center px-10">
                 <div className="bg-[#F3BE62] flex flex-col justify-center items-center rounded-xl">
-                  <img
+                  <LazyLoadImage
+                    effect="blur"
+                    placeholderSrc={P180x280}
                     src={img5}
+                    visibleByDefault={img5 === img5}
                     alt="rambut"
                     className="w-[50%] m-auto pt-3"
                   />
@@ -115,7 +122,7 @@ const PerubahanFisik = () => {
                 <div className="bg-[#F3BE62] flex flex-col justify-center items-center rounded-xl">
                   <LazyLoadImage
                     effect="blur"
-                    placeholderSrc="https://via.placeholder.com/180x280"
+                    placeholderSrc={P180x280}
                     visibleByDefault={img6 === img6}
                     src={img6}
                     alt="rambut"

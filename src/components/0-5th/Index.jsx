@@ -22,7 +22,6 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P100}
             src={bayi}
-            visibleByDefault={bayi === bayi}
             alt="Foto Bayi"
             className="w-[7rem] border p-1 bg-white rounded-full"
           />
@@ -40,7 +39,6 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={tubuh === tubuh}
             src={tubuh}
             alt="tubuh"
             className="w-[70%] mx-auto"
@@ -57,7 +55,6 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={lahir === lahir}
             src={lahir}
             alt="tubuh"
             className="w-[60%] mx-auto"
@@ -74,7 +71,6 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={lakidanperempuan === lakidanperempuan}
             src={lakidanperempuan}
             alt="tubuh"
             className="w-[70%] mx-auto"
@@ -91,7 +87,6 @@ const Index = ({ name }) => {
           <LazyLoadImage
             placeholderSrc={P110x120}
             effect="blur"
-            visibleByDefault={perilaku === perilaku}
             src={perilaku}
             alt="tubuh"
             className="w-[60%] mx-auto"
