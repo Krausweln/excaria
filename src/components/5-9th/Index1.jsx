@@ -2,7 +2,7 @@ import { memo } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 
-import profile from "../img/testimg.jpg";
+import profile from "../img/profile10-12th.png";
 
 const Index1 = ({ name }) => {
   return (
@@ -14,9 +14,9 @@ const Index1 = ({ name }) => {
             effect="blur"
             src={profile}
             alt="profile picture"
-            className="w-28 h-28 rounded-full relative -left-2"
+            className="w-4/12  rounded-full relative -left-2"
           />
-          <div>
+          <div className="-mt-6">
             <p className="text-5xl text-[#451814] font-sansita font-bold">
               Halo {name}
             </p>
