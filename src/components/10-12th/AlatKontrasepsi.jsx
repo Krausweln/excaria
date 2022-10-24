@@ -13,7 +13,6 @@ import {
 import SwiperBackButton from "./SwiperBackButton";
 import SwiperNextbutton from "./SwiperNextbutton";
 
-import "swiper/css/effect-fade";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const AlatKontrasepsi = () => {
@@ -23,7 +22,7 @@ const AlatKontrasepsi = () => {
     <section>
       <div className="w-full h-screen relative bg-[#FFE2D3]">
         <Swiper
-          modules={[Pagination, EffectFade]}
+          modules={[Pagination]}
           onRealIndexChange={(index) => {
             return setCount(index.realIndex);
           }}
@@ -34,6 +33,7 @@ const AlatKontrasepsi = () => {
               <LazyLoadImage
                 src={imgbg}
                 placeholderSrc="https://via.placeholder.com/350x310"
+                effect="blur"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
@@ -64,6 +64,7 @@ const AlatKontrasepsi = () => {
               <LazyLoadImage
                 src={imgbg}
                 placeholderSrc="https://via.placeholder.com/350x310"
+                effect="blur"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
@@ -93,6 +94,7 @@ const AlatKontrasepsi = () => {
               <LazyLoadImage
                 src={imgbg}
                 placeholderSrc="https://via.placeholder.com/350x310"
+                effect="blur"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
@@ -123,6 +125,7 @@ const AlatKontrasepsi = () => {
               <LazyLoadImage
                 src={imgbg}
                 placeholderSrc="https://via.placeholder.com/350x310"
+                effect="blur"
                 alt=""
                 class="w-[90%] opacity-70 m-auto"
               />
@@ -152,6 +155,7 @@ const AlatKontrasepsi = () => {
               <LazyLoadImage
                 src={imgbg}
                 placeholderSrc="https://via.placeholder.com/350x310"
+                effect="blur"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
@@ -184,6 +188,7 @@ const AlatKontrasepsi = () => {
               <LazyLoadImage
                 src={imgbg}
                 placeholderSrc="https://via.placeholder.com/350x310"
+                effect="blur"
                 alt=""
                 className="w-[90%] opacity-70 m-auto"
               />
